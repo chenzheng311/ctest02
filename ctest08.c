@@ -2,9 +2,9 @@
 int main(void)
 {
     float x,y;
-    printf("月用电量\n")
+    printf("月用电量\n");
     scanf("%f",&x);
-    if(<=50.0){
+    if(x<=50.0){
         y=0.53*x;
     }
     else{
