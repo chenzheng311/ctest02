@@ -10,6 +10,6 @@ int main(void)
     else{
         y=0.53*50+(x-50)*(0.53+0.05);
     }
-    printf("y=%f\n",y);
+    printf("y=%.2f\n",y);
     return 0;
 }
