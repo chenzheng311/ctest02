@@ -23,18 +23,11 @@ int isprime(int x)
     }
 }
 int main(void)
-
 {
-    int x;
-    printf("Enter x::\n");
-    scanf("%d", &x);
-    if (isprime(x) == 1)
+    int m;
+    for(m=2;m<=100;m++)
     {
-        printf("yes\n");
+        if(isprime(m)==1){printf("%6d",m);}
+        else{continue;}
     }
-    if (isprime(x) == 0)
-    {
-        printf("no\n");
-    }
-    return 0;
 }
