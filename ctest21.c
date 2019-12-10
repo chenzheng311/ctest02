@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 int isprime(int x)
 {
 
@@ -25,9 +25,15 @@ int isprime(int x)
 int main(void)
 {
     int m;
-    for(m=2;m<=100;m++)
+    for (m = 2; m <= 100; m++)
     {
-        if(isprime(m)==1){printf("%6d",m);}
-        else{continue;}
+        if (isprime(m) == 1)
+        {
+            printf("%6d", m);
+        }
+        else
+        {
+            continue;
+        }
     }
 }
