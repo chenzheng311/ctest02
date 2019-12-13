@@ -8,9 +8,10 @@ int main()
     {
         scanf("%d", &a[m]);
     }
+    x = a[n - 1];
     for (i = n - 1; i >= 0; i--)
     {
-        x = a[n - 1];
+
         y = a[i - 1];
         if (x > y)
         {
@@ -20,7 +21,7 @@ int main()
         {
             z = y;
         }
-        
+        x = z;
     }
     printf("max=%d", z);
 }
